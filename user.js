@@ -1,17 +1,17 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
 // Create Schema and Model
-const UsersSchema = new Schema({
+var UsersSchema = new Schema({
 
   name: String,
   phone: Number,
   email: String,
-  age: Number;
+  age: Number
   
 });
 
-const Users = mongoose.model('Users', UsersSchema);
+var Users = mongoose.model('Users', UsersSchema);
 
 //Allows model to be used outside
 module.exports = Users;

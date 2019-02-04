@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+var mongoose = require('mongoose');
 
 //ES6 Promises6
 mongoose.Promise = global.Promise;
