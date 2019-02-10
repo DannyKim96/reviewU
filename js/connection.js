@@ -1,8 +1,24 @@
-const mongoose = require('mongoose');
-const express = require('express');
+// const mongoose = require('mongoose');
+// const express = require('express');
+//
+//
+// const app = express();
 
 
-const app = express();
+
+
+
+/*
+* USE THIS FILE FOR INSTRUCTIONAL PURPOSES ONLY
+*
+* THE REAL 'CONNECTOR' FILE IS APP.JS IN THIS DIRECTORY
+*
+* */
+
+
+
+
+
 
 
 // development environment only - local environment
@@ -41,15 +57,15 @@ const app = express();
 //    });
 // });
 
-var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/mydb";
-//var name = document.getElementById("exampleInputFirstName");
-
-MongoClient.connect(url, function(err, db) {
-    if(err) throw err;
-    var dbo  = db.db("testdb");
-    var obj = {name: "testUser", email: "test@test.com"};
-
+// var MongoClient = require('mongodb').MongoClient;
+// var url = "mongodb://localhost:27017/mydb";
+// //var name = document.getElementById("exampleInputFirstName");
+//
+// MongoClient.connect(url, function(err, db) {
+//     if(err) throw err;
+//     var dbo  = db.db("testdb");
+//     var obj = {name: "testUser", email: "test@test.com"};
+//
 
 
 
@@ -88,4 +104,4 @@ MongoClient.connect(url, function(err, db) {
     //     db.close();
     // })
 
-})
+//})
