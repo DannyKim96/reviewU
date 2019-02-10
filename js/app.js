@@ -10,8 +10,7 @@ var mongoose = require("mongoose");
 var router = new express.Router();
 
 
-//this is a tutorial that shows me a very basic way to use Node.js and Express.js to save data to a MongoDB Databse
-//the tutorial can be found at https://codeburst.io/hitchhikers-guide-to-back-end-development-with-examples-3f97c70e0073
+
 
 
 //Connecting and initializing the database
@@ -39,6 +38,8 @@ var User = mongoose.model("Customer", customerSchema);
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
 });
+
+
 app.post("/addname", (req, res) => {
     var myData = new User(req.body);
     myData.save()
